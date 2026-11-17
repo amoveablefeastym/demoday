@@ -16,7 +16,7 @@ import { DemoPlan } from "./schema.ts";
 const STAGES = ["fetch", "plan", "record", "render"] as const;
 type Stage = (typeof STAGES)[number];
 
-const HELP = `demoforge — repo in, launch demo video out.
+const HELP = `demoday — repo in, launch demo video out.
 
   npx tsx src/cli.ts <github-url | owner/repo | ./local/dir> [options]
 

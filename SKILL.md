@@ -1,15 +1,15 @@
 ---
-name: demoforge
+name: demoday
 description: Make a captivating launch/demo video for a product from its repo (GitHub or local folder) and its live web app OR native macOS app — storyboard (pain-first, before/after, "only us"), scripted recording with auto-zoom, captions and sound effects, styled to match the app's own look, assembled in Remotion into an MP4. Use when the user asks for a demo video, launch video, product video, promo or walkthrough recording of a repo, web app or Mac app.
 ---
 
-# demoforge
+# demoday
 
 Turns a repo (GitHub or a local folder) + its live web app or native macOS app into a 45–75s 1080p demo video that looks like it was made by the app's own designer. The tool is a Node/TS CLI that ships with this skill. **You** are the director: you write the storyboard (`plan.json`); the tool records and renders it. No API key needed.
 
 ## 0. Find and set up the tool (`TOOL`)
 
-`TOOL` is **this skill's base directory** if it contains `package.json` (the normal install: the whole repo cloned into `~/.claude/skills/demoforge`). Otherwise it is `~/demoforge`. If neither exists, stop and point the user to the install steps in the README.
+`TOOL` is **this skill's base directory** if it contains `package.json` (the normal install: the whole repo cloned into `~/.claude/skills/demoday`). Otherwise it is `~/demoday`. If neither exists, stop and point the user to the install steps in the README.
 
 First run on a machine (when `TOOL/node_modules` is missing):
 1. Check `node --version` (needs ≥ 20). If it's missing, tell the user to install Node.js (`brew install node` or nodejs.org) and stop.

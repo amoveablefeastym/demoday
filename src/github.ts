@@ -58,7 +58,7 @@ export function parseRepo(input: string): string {
 
 async function gh(path: string, raw = false): Promise<any> {
   const headers: Record<string, string> = {
-    "User-Agent": "demoforge",
+    "User-Agent": "demoday",
     Accept: raw ? "application/vnd.github.raw+json" : "application/vnd.github+json",
   };
   const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;

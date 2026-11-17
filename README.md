@@ -1,4 +1,4 @@
-# demoforge
+# demoday
 
 GitHub repo in, launch demo video out.
 
@@ -7,22 +7,22 @@ GitHub repo in, launch demo video out.
 The whole repo **is** the skill. Clone it into your skills folder and ask Claude Code for a demo video:
 
 ```bash
-git clone https://github.com/amoveablefeastym/demoforge ~/.claude/skills/demoforge
+git clone https://github.com/amoveablefeastym/demoday ~/.claude/skills/demoday
 ```
 
-Then, in any Claude Code session: *"make a launch video for owner/repo"* or `/demoforge`.
+Then, in any Claude Code session: *"make a launch video for owner/repo"* or `/demoday`.
 On first use Claude installs the dependencies itself (`npm install` and Playwright's Chromium, about 300 MB).
 No Anthropic API key is needed: Claude Code writes the storyboard.
 
 **Requirements**
 - [Claude Code](https://claude.com/claude-code)
 - Node.js 20+ (`brew install node`)
-- For **native Mac app** demos only: macOS 15+, Xcode Command Line Tools (`xcode-select --install`), and two permissions for the app you run Claude Code in (VS Code, Terminal, …): *Accessibility* and *Screen & System Audio Recording*. demoforge opens the right Settings page for you. Restart that app after granting. Recording drives your real mouse and keyboard for 20–60s.
+- For **native Mac app** demos only: macOS 15+, Xcode Command Line Tools (`xcode-select --install`), and two permissions for the app you run Claude Code in (VS Code, Terminal, …): *Accessibility* and *Screen & System Audio Recording*. demoday opens the right Settings page for you. Restart that app after granting. Recording drives your real mouse and keyboard for 20–60s.
 - **Remotion license:** rendering uses [Remotion](https://remotion.dev), which is free for individuals and small companies but needs a paid company license above that size. Check [remotion.dev/license](https://remotion.dev/license) before using it at work.
 
-**Update:** `git -C ~/.claude/skills/demoforge pull`
+**Update:** `git -C ~/.claude/skills/demoday pull`
 
-**Team-wide:** clone it into a project's `.claude/skills/demoforge` instead, and everyone working in that repo gets the skill.
+**Team-wide:** clone it into a project's `.claude/skills/demoday` instead, and everyone working in that repo gets the skill.
 
 ## Use without Claude Code
 

@@ -1,4 +1,4 @@
-// macdriver: drive and record a native macOS app for demoforge.
+// macdriver: drive and record a native macOS app for demoday.
 //
 //   macdriver check [--prompt]
 //   macdriver probe --app <X.app> --out <dir> [-- <app args>]
@@ -6,7 +6,7 @@
 //
 // Finds controls through the Accessibility API, moves the real mouse/keyboard with
 // CGEvents, and records ONLY the app's window with ScreenCaptureKit (no system cursor;
-// demoforge redraws it). Writes <out>/raw.mp4 + <out>/events.json in the same shape as
+// demoday redraws it). Writes <out>/raw.mp4 + <out>/events.json in the same shape as
 // the Playwright recorder, so the edit + Remotion stages are shared.
 //
 // Needs (for the app that launches it, e.g. VS Code or Terminal):
@@ -343,7 +343,7 @@ func checkPermissions(needScreen: Bool, open: Bool) -> [Permission] {
         }
     }
     RunLoop.main.run(until: Date().addingTimeInterval(Double(missing.count) * 1.5 + 0.3))
-    let host = hostAppName() ?? "the app you run demoforge from (VS Code, Terminal…)"
+    let host = hostAppName() ?? "the app you run demoday from (VS Code, Terminal…)"
     print("""
 
       ⚙︎  Opened System Settings → Privacy & Security → \(missing.map(\.rawValue).joined(separator: " and ")).

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Synthesize demoforge's sound effects (stdlib only, no samples to license).
+"""Synthesize demoday's sound effects (stdlib only, no samples to license).
 
 Usage: python3 scripts/make-sfx.py [out_dir]   (default: assets/sfx)
 Writes 16-bit mono 44.1kHz WAVs: key1-4 (tactile mechanical), space, click, enter, whoosh, chime, stamp, thud, pop.

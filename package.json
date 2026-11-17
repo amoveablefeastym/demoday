@@ -1,11 +1,11 @@
 {
-  "name": "demoforge",
+  "name": "demoday",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "description": "Claude Code skill + CLI: repo in, captivating launch demo video out (web apps and native Mac apps).",
   "bin": {
-    "demoforge": "src/cli.ts"
+    "demoday": "src/cli.ts"
   },
   "scripts": {
     "demo": "tsx src/cli.ts",
