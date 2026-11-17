@@ -1,0 +1,4 @@
+node_modules
+out
+mac/.build
+.DS_Store

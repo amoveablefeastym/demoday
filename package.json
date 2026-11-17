@@ -1,0 +1,38 @@
+{
+  "name": "demoforge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Claude Code skill + CLI: repo in, captivating launch demo video out (web apps and native Mac apps).",
+  "bin": {
+    "demoforge": "src/cli.ts"
+  },
+  "scripts": {
+    "demo": "tsx src/cli.ts",
+    "studio": "remotion studio remotion/index.ts",
+    "typecheck": "tsc --noEmit",
+    "setup": "npm install && npx playwright install chromium"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.9.0",
+    "@remotion/bundler": "^4.0.544",
+    "@remotion/cli": "^4.0.544",
+    "@remotion/google-fonts": "^4.0.544",
+    "@remotion/renderer": "^4.0.544",
+    "@remotion/transitions": "^4.0.544",
+    "playwright": "^1.65.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "^4.0.544",
+    "tsx": "^4.23.15",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
